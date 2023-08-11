@@ -5,6 +5,11 @@ box-sizing: border-box;
 font-family: "General Sans";
 background-color: black;
 cursor: none;
+
+}
+a{
+    text-decoration: none;
+    color:white;
 }
 
 html, body 
@@ -23,6 +28,15 @@ html, body
     opacity: 0.8;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.25s;
 
+}
+#full-stack 
+{
+    margin-right:270px;
+}
+#linkedIn-change
+{
+    text-decoration: none;
+    color: white;
 }
 
 #main
@@ -313,11 +327,14 @@ html, body
 {
     display: flex;
     gap: 10px;
+    margin-left:30px;
     
 }
 #footerRight
 {
+    margin-right: 30px;
     display: flex;
     gap: 10px;
     
 }
+
