@@ -1,0 +1,323 @@
+* {
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: "General Sans";
+background-color: black;
+cursor: none;
+}
+
+html, body 
+{
+    width: 100%;
+    height:100%;
+}
+#touchCircle
+{
+    width: 10px;
+    height:10px;
+    background-color: #ffff;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.25s;
+
+}
+
+#main
+{
+    width: 100%;
+    background-color: black;
+}
+
+#screen
+{
+    position: relative;
+    width:100%;
+    height: 100vh;
+    background-color: black;
+    color:#ffff;
+}
+#nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding:20px 40px;
+    color:white;
+}
+#nav a
+{
+    text-decoration: none;
+    font-size: 18px;
+    color:white;
+    
+}
+.boundaryBox
+{
+    width: fit-content;
+    
+    overflow: hidden;
+    
+}
+/* .boundaryBoxElement 
+{
+    transform: translateY(50%);
+} */
+
+#heading
+{
+    margin-top:90px;
+}
+#heading #second_h1
+{
+    margin-left: 230px;
+}
+#heading h1
+{
+    margin-left: 30px;
+    opacity: 0.6;
+    line-height: 1;
+    font-family: "General Sans Medium";
+     font-size: 9vw;
+     text-transform: uppercase;
+     font-weight: 900;
+}
+.together
+{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.together h5{
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: right;
+}
+#smolHeadingText
+{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+/* Search values in vw */
+#smolHeadingText
+{
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: .5vw;
+    font-size:1vw;
+    flex-direction: column;
+}
+#screenFooter a
+{
+    
+     color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+#screenFooter
+{
+    padding:0 2vw;
+    width:100%;
+     position: absolute; 
+     bottom :3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    
+}
+/* #secondScreen .elem {
+    display: flex; /* Use flexbox 
+    align-items: center;
+  } */
+#secondScreen
+{
+    padding-top:200px;
+    background-color:black;
+    padding-right:5vw;
+    padding-left:5vw;
+    width: 100%;
+    height:100vh;
+    color:#ffff;
+    padding-bottom: 50vw;
+}
+
+#firstYear
+{
+    width: 100%;
+    border-top:1px solid #888;
+    padding:2vw 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#firstYear h1 
+{
+    text-transform: uppercase;
+    font-size:5vw;
+    opacity: 0.6;
+}
+#secondYear
+{
+    width: 100%;
+    border-top:1px solid #888;
+    padding:2vw 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#secondYear h1 
+{
+    text-transform: uppercase;
+    font-size:5vw;
+    opacity: 0.6;
+}
+#thirdYear
+{
+    width: 100%;
+    border-top:1px solid #888;
+    padding:2vw 1vw;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+#thirdYear h1 
+{
+    text-transform: uppercase;
+    font-size:5vw;
+    opacity: 0.6;
+    
+}
+#secondScreen img{
+    z-index: 999;
+    /* position:absolute; */ /*THIS WAS THE CULPRIT BEHIND OVERLAPPING IMAGES*/
+   height: 100%;
+   /* width:100px;
+   height:100px; */
+   width: 300px;
+   display: flex;
+   justify-content:space-between;
+   /* margin-right:10px; */
+   /* display: hidden; */
+   
+    
+}
+#about 
+{
+    height: auto;
+    margin-top: 200px;
+    width: 100%;
+    background-color: black;
+    padding: 10vw 10vw;
+    padding-left:40vw;
+    color:#ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    
+    
+}
+#about h5{
+    color: #888;
+    text-transform: capitalize;
+    font-weight: 900;
+    margin:5px 0px;
+    
+}
+
+#about img{
+    border-radius: 50%;
+    display: flex;
+    width:10vw;
+}
+
+#textAbout a{
+    text-decoration: none;
+    color: #888;
+    border:1px solid white;
+    border-radius:100px;
+    font-size: small;
+    padding: 10px;
+
+
+}
+
+
+#textAbout p
+{
+    line-height: 1.7;
+    margin-bottom: 30px;
+    margin-top: 1vw;
+    font-size: 10px;
+}
+#textAbout
+{
+    width:25rem;
+}
+#linkedin
+{
+    color:#ffff;
+    background-color: black;
+    padding: 20px 30px;
+    padding-bottom:7vw;
+
+
+}
+
+#linkedin h5{
+    opacity: 0.6;
+    text-transform: uppercase;
+
+}
+#linkedin h3 
+{
+  
+    text-transform: uppercase;
+    font-size:14px;
+    margin-top:10px;
+}
+
+#footer
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: #ffff;
+}
+#footer a 
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight:500;
+    text-decoration: none;
+    color: #ffff;
+
+}
+#footerLeft
+{
+    display: flex;
+    gap: 10px;
+    
+}
+#footerRight
+{
+    display: flex;
+    gap: 10px;
+    
+}
